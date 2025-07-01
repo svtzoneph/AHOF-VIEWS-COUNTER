@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AHOF MV LIVE COUNTER</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@500&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -19,12 +18,6 @@
       color: #ffffff;
       display: flex;
       flex-direction: column;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
 
     header {
@@ -61,17 +54,27 @@
       margin-top: 25px;
       padding: 12px 25px;
       background-color: gray;
-      color: #111827;
+      color: #ffffff;
       font-weight: bold;
       border: none;
       border-radius: 8px;
       text-decoration: none;
-      font-size: 0.8em;
-      transition: background-color 0.3s ease;
+      font-size: 0.9em;
+      text-align: center;
+      transition: background-color 0.5s ease;
     }
 
     .btn-link:hover {
       background-color: #66fff2;
+      color: #111827;
+    }
+
+    .visitor-map {
+      margin-top: 150px;
+      text-align: center;
+      width: 100%;
+      max-width: 360px;
+      overflow-x: auto;
     }
 
     footer {
@@ -95,17 +98,27 @@
 
     @media (max-width: 400px) {
       header h1 {
-        font-size: 1.6em;
+        font-size: 1.5em;
       }
 
       .btn-link {
-        font-size: 0.95em;
+        font-size: 0.85em;
         padding: 10px 20px;
+        width: 100%;
+        max-width: 320px;
       }
 
       footer {
         font-size: 0.8em;
       }
+      
+       .visitor-map {
+      margin-top: 150px;
+      text-align: center;
+      width: 100%;
+      max-width: 360px;
+      overflow-x: auto;
+    }
     }
   </style>
 </head>
@@ -118,10 +131,14 @@
   <main>
     <iframe src="https://livecounts.io/embed/youtube-live-view-counter/D2-G60fuW_4"></iframe>
 
-    <!-- 🔘 Button below the live counter -->
-    <a href="https://youtu.be/D2-G60fuW_4?si=_wsU_IhwwXnxAXlZ" target="_blank" class="btn-link">
+    <a href="https://youtu.be/D2-G60fuW_4?si=3N4GLLb0xgK_ohuH" target="_blank" class="btn-link">
       AHOF(아홉) (Rendezvous)’ Official MV
     </a>
+
+    <!-- 🌍 Visitor Tracker Script -->
+    <div class="visitor-map">
+      <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=Dh6rJxI_ErRhnQwNVJ_MCi2Gw4lzm5Ur2BQSYDLPsRE&cl=ffffff&w=a"></script>
+    </div>
   </main>
 
   <footer>

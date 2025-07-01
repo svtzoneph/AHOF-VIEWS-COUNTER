@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AHOF MV LIVE COUNTER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2em;
+      color: #00ffe0;
+      margin: 0;
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    iframe {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 350px;
+      height: 80px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 255, 224, 0.2);
+    }
+
+    .btn-link {
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: gray;
+      color: #111827;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.8em;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-link:hover {
+      background-color: #66fff2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 10px;
+      background-color: #0f172a;
+      font-size: 0.9em;
+      color: #bbb;
+      border-top: 1px solid #334155;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #66fff2;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 400px) {
+      header h1 {
+        font-size: 1.6em;
+      }
+
+      .btn-link {
+        font-size: 0.95em;
+        padding: 10px 20px;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AHOF MV LIVE COUNTER</h1>
+  </header>
+
+  <main>
+    <iframe src="https://livecounts.io/embed/youtube-live-view-counter/D2-G60fuW_4"></iframe>
+
+    <!-- 🔘 Button below the live counter -->
+    <a href="https://youtu.be/D2-G60fuW_4?si=_wsU_IhwwXnxAXlZ" target="_blank" class="btn-link">
+      AHOF(아홉) (Rendezvous)’ Official MV
+    </a>
+  </main>
+
+  <footer>
+    © 2025 <a href="https://x.com/101_livestream?t=QK5UxWxRuUi5b01znOsWag&s=09" target="_blank">Livestream101</a> |
+    <a href="https://t.me/zoneahof" target="_blank">A.H.O.F ZONE</a>
+  </footer>
+
+</body>
+</html>
